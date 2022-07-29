@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title> Zari E-Commerce </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Zari E-Commerce">
+    <meta name="kaywords" content="Zari E-Commerce">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AHMED RASHED" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Zari E-Commerce form -->
+    <section class="bg-black app-form">
+        <div class="container position-relative pt-4 pb-5">
+            <img src="images/Vector 5.png" class="position-absolute top-0 start-0 ms-2 w-25 vector" alt="vector">
+            <div class="img-zari mb-5">
+                <img src="images/E-commerce white.png" alt="zari logo">
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-3 d-flex justify-content-start align-items-center position-relative cont-note">
+                    <div class="note me-4 mt-3">
+                        <img src="images/Group 1.png" alt="note">
+                    </div>
+                    <img src="images/Vector 4.png" class="w-75 position-absolute top-50 start-0 vector" alt="vector">
+                </div>
+                <div class="col-lg-6">
+                    <form >
+                        <div class="inputs-list bg-white ">
+                            <label for="name">الأسم</label>
+                            <input id="name" type="text" name="Name" required class="form-control">
+
+                            <label for="phone">رقم الجوال</label>
+                            <input id="phone" type="tel" name="Phone" required class="form-control">
+
+                            <label for="email">الإيميل</label>
+                            <input id="email" type="email" name="ClientEmail" required class="form-control">
+                            <div id="alertEmail" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-2">الإيميل غير صالح</div>
+
+                            <label for="Activity">نوع النشاط</label>
+                            <input  type="text" name="Activity" id="Activity" required class="form-control">
+
+                            <!-- <input type = "hidden" id = "Activity" name = "Activity" value = "0">
+
+                            <label for="activity">نوع النشاط</label>
+                            <button class="form-control dropdown-toggle mb-4" type="menu" id="activity"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu p-3" aria-labelledby="activity">
+                                <a class="dropdown-item" onclick = "Activity('كوفي شوب')">كوفي شوب </a>
+                                <a class="dropdown-item" onclick = "Activity('صالون رجالي')">صالون رجالي </a>
+                                <a class="dropdown-item" onclick = "Activity('صالون نسائي')"> صالون نسائي </a>
+                                <a class="dropdown-item" onclick = "Activity('سبا سنتر')">سبا سنتر </a>
+                                <a class="dropdown-item" onclick = "Activity('مركز مساج')">مركز مساج </a>
+                                <a class="dropdown-item" onclick = "Activity('مطعم وكوفي')">مطعم وكوفي </a>
+                                <a class="dropdown-item" onclick = "Activity('محل زهور وهدايا')">محل زهور وهدايا </a>
+                                <a class="dropdown-item" onclick = "Activity('دايت سنتر')">دايت سنتر </a>
+                                <a class="dropdown-item" onclick = "Activity('مغسلة سيارات')">مغسلة سيارات </a>
+                                <a class="dropdown-item" onclick = "Activity('مغسلة ملابس')">مغسلة ملابس </a>
+                                <a class="dropdown-item" onclick = "Activity('صالة العاب ترفيهيه')">صالة العاب ترفيهيه </a>
+                            </div> -->
+                            <p id="alertRegister" class="fs-6 mb-2 mt-3 w-75 text-center mx-auto"></p>
+                            <a id="register" onclick="SubmitForm()" class="btn btn-black form-control text-white text-center py-2 mb-3">أبدأ الآن</a>
+                            <a target="_blank" href="https://wa.me/+966566770235" class="btn btn-cofe form-control text-black text-center py-2">تحدث معنا</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end align-items-end position-relative cont-char">
+                    <div class="character">
+                        <img src="images/freepik--Character--inject-936 (2).png" alt="Character">
+                    </div>
+                    <img src="images/Vector 3.png"
+                        class="position-absolute top-50 end-0 vector translate-middle-y vector-pen" alt="vector">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- online project -->
+    <section class="py-5">
+        <div class="container">
+            <div class="main-title">
+                <h1 class="heading text-center fw-bold mb-5">أجعل مشروعك أونلاين</h1>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="reasons">
+                        <h5 class="main-color mb-3">للأسباب التالية:</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="main-color">أولا</span>
+                            <p class="mb-0"> أغلب العملاء أصبحوا يفضلوا شراء منتجاتهم عن طريق الإنترنت.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="main-color">ثانيا</span>
+                            <p class="mb-0"> أثبتت الإحصائيات أنه في عام 2022 أصبح هناك 2.14 مليار مشتري عبر الإنترنت وأصبحت مبيعات التجارة الإلكترونية 18.1% من مبيعات التجزئة في جميع أنحاء العالم.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img text-center">
+                        <img src="images/Ecommerce web page-pana.png" alt="Ecommerce">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- benefits -->
+    <section class="pt-4 pb-5 benefits">
+        <div class="container">
+            <div class="main-title">
+                <h2 class="fs-1 heading text-center fw-bold mb-5">فائدة المتجر الإلكتروني!</h2>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-4 position-relative">
+                    <div class="benefit">
+                        <span><img src="images/dollar (3).png" alt="dollar"></span>
+                        <p class="mb-0">تقليل تكاليف الإدارة.</p>
+                    </div>
+                    <img src="images/Vector 13.png" class="position-absolute top-25 start-0 vector" alt="vector">
+                </div>
+                <div class="col-lg-4 align-self-center position-relative">
+                    <div class="benefit">
+                        <span><img src="images/increasing.png" alt="increasing"></span>
+                        <p class="mb-0">زيادة مبيعاتك وأرباحك.</p>
+                    </div>
+                    <img src="images/Vector 14.png" class="position-absolute top-25 start-0 vector" alt="vector">
+                </div>
+                <div class="col-lg-4 align-self-end">
+                    <div class="benefit">
+                        <span><img src="images/increase.png" alt="increase"></span>
+                        <p class="mb-0">زيادة عدد عملائك.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-4 position-relative">
+                    <div class="benefit">
+                        <span><img src="images/online-shop.png" alt="online-shop"></span>
+                        <p class="mb-0">الحصول على موقع إلكتروني وتطبيق موبايل بإسمك(مما يسبب زيادة عملائك وإنتشار أسمك بين المنافسين).</p>
+                    </div>
+                    <img src="images/Vector 13.png" class="position-absolute top-25 start-0 vector" alt="vector">
+                </div>
+                <div class="col-lg-4 align-self-center position-relative">
+                    <div class="benefit">
+                        <span><img src="images/store.png" alt="store"></span>
+                        <p class="mb-0">سيصبح متجرك الإلكتروني متاح خلال يومين وسنقوم بإدخال 50 منتج لك لسرعة البدء</p>
+                    </div>
+                    <img src="images/Vector 14.png" class="position-absolute top-25 start-0 vector" alt="vector">
+                </div>
+                <div class="col-lg-4 align-self-end">
+                    <div class="benefit">
+                        <span><img src="images/hand-shake (1).png" alt="hand-shake"></span>
+                        <p class="mb-0">تقدر تستفيد من خدمة زاري إكسبريس مجاناً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- specifications -->
+    <section class="py-5 specifications">
+        <div class="container">
+            <div class="main-title">
+                <h2 class="fs-1 heading text-center fw-bold mb-0 pb-0">مواصفات Zari E-<span class="main-color">Commerce</span></h2>
+                <p class="mb-5 text-center">(Website-Android-IOS-POS)</p>
+            </div>
+            <div class="row gy-4 mb-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="specific-img text-center">
+                        <img src="images/Investment data-amico.png" alt="Investment">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="specific-title">
+                        <ul>
+                            <li>الميزانية.</li>
+                            <li>التدفقات النقدية.</li>
+                            <li>نظام إدارة نقاط البيع.</li>
+                            <li>إدارة الفواتير.</li>
+                            <li>إدارة النفقات.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row rev gy-4 mb-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="specific-title">
+                        <ul>
+                            <li>تقارير حساب المدفوعات.</li>
+                            <li>تقارير الأرباح والخسائر.</li>
+                            <li>تقرير المبيعات.</li>
+                            <li>كشف حساب.</li>
+                            <li>الجرد المتقدم.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="specific-img text-center">
+                        <img src="images/Online report-amico.png" alt="report">
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 mb-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="specific-img text-center">
+                        <img src="images/Customer relationship management-amico.png" alt="relationship">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="specific-title">
+                        <ul>
+                            <li>إدارة عروض الأسعار.</li>
+                            <li>نظام إدارة الحسابات.</li>
+                            <li>إدارة المرتجعات.</li>
+                            <li>إدارة المنتجات.</li>
+                            <li>إدارة العملاء.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row rev gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="specific-title">
+                        <ul>
+                            <li>ربط مع تواصل إجتماعي.</li>
+                            <li>ربط مع شركات الشحن.</li>
+                            <li>ربط مع طرق دفع مختلفة.</li>
+                            <li>ربط مع شركات أقساط.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="specific-img text-center">
+                        <img src="images/Group 10 (1).png" alt="Group">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- trans-online -->
+    <section class="pt-5 pb-4 trans-online">
+        <div class="container">
+            <div class="main-title">
+                <h2 class="fs-1 heading text-center fw-bold mb-5">إنـــــــــــــــــــــــــــــــــــقل أونلاين</h2>
+            </div>
+            <div class="row rev gy-5">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="title-trans">
+                        <p>شركة <span class="fs-5 main-color fw-bold">زاري</span> شركة سعودية تعاونت مع عدة شركات ,وأبتدت بشراكات بمصر نظراً للقوة الشرائية وحجم التبادل التجاري ينهما بمختلف المجالات ولذلك تم إنشاء <span class="fs-5 main-color fw-bold">Zari Express</span>.</p>
+                        <p>موقع إلكتروني وتطبيق جوال جامع المصانع ومحلات الجملة بمختلف مجالاتهم وسوف يكون مرتبط بمتجر زاري الإلكتروني.</p>
+                        <p class="main-color fw-bold">بمعنى؟</p>
+                        <p>بمعنى أن أي محل او شركة لديها المتجر تقدر تشتري أو تستورد بكل سهولة من المنتجات المعروضة على المتجر سواء منتج مصري او سعودي. ولن يكون مرتبط فقط بمتجر زاري... ولكن سيكون أي تاجر أو مستخدم يستطيع الطلب من خلاله.</p>
+                        <p> <span class="fs-5 fw-bold">المرحلة الأولي</span>: زاري إكسبريس موجود في مصر والسعودية.</p>
+                        <p> <span class="fs-5 fw-bold">المرحلة الثانية</span>: سيكون موجود في دول الخليج والوطن العربي.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-trans text-center">
+                        <img src="images/Company-amico 1.png" alt="Company">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-5 mb-4">
+                <div class="col-lg-6">
+                    <div class="info">
+                        <img src="images/zari s w.png" alt="zari logo">
+                        <p class="my-4">زارى هي شركة سعودية ضمن مجموعة شركات تعمل في أكثر من مجال في المملكة العربية السعودية والشرق الأوسط.</p>
+                        <div class="icons d-flex align-items-center">
+                            <a target="_blank" href="https://www.facebook.com/ZARISolutionksa"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://twitter.com/SolutionZari"><i class="fa-brands fa-twitter"></i></a>
+                            <a target="_blank" href="https://wa.me/+966566770235"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/zari-solution-ksa-12717623b/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/zarisolutionksa/"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@zarisolutionksa"><img src="images/tik-tok.png" alt="tik-tok"></a>
+                            <a target="_blank" href="https://www.snapchat.com/add/zari_solutions?share_id=osFpGeXWnlE&locale=en-US"><img src="images/snapchat.png" alt="snapchat"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="conect text-white">
+                        <h2 class="mb-4">تواصل معنا</h2>
+                        <div class="links-navigate d-flex justify-content-center flex-column">
+                            <div class="d-flex justify-content-start align-items-center mb-3">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <p class="mb-0 lh-sm"> 7865 طريق الملك عبدالله بن عبد العزيز-جشم-المدينة المنورة-المملكة العربية السعودية.</p>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center mb-3">
+                                <span><i class="fa-solid fa-phone"></i></span>
+                                <a dir="ltr" target="_blank" href="tel:+966 92 002 4403"> +966 92 002 4403</a>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <span><i class="fa-solid fa-envelope"></i></span>
+                                <a target="_blank" href="https://info@zarisolution.com/"> info@zarisolution.com</a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light">
+        <div class="container">
+            <h6 class="text-muted text-center">كافة الحقوق محفوظة ل Zari <span id="year"></span></h6>
+        </div>
+    </footer>
+
+    <!-- js files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
